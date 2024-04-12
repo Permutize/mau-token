@@ -1,0 +1,9 @@
+name: venom-local-node
+services:
+  local-node:
+    container_name: local-node
+    environment:
+      - USER_AGREEMENT=yes
+    ports:
+      - 80:80
+    image: tonlabs/local-node
